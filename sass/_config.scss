@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--white);
+  font: var(--body1);
+  color: var(--grey);
+  margin: 0;
+}

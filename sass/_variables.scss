@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
+  // Colors
   --black: #242629;
   --white: #ffffff;
   --blue: #094067;
@@ -9,6 +9,8 @@
   --tertiary: #ef4565;
   --button: #3da9fc;
   --bg-alt: #d8eefe;
+
+  // Fonts
   --fontPrimary: "Inter", sans-serif;
   --headline1: bold 72px / 80px var(--fontPrimary);
   --headline2: bold 64px / 76px var(--fontPrimary);
@@ -22,23 +24,3 @@
   --button: 600 18px / 27px var(--fontPrimary);
   --caption: normal 12px / 27px var(--fontPrimary);
 }
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  background-color: var(--white);
-  font: var(--body1);
-  color: var(--grey);
-  margin: 0;
-}
-/*# sourceMappingURL=index.css.map */
