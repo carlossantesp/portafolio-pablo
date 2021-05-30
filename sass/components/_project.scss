@@ -11,6 +11,10 @@
   }
 }
 .project {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
   &__img {
     margin-block-end: toRem(32);
     text-align: center;
@@ -41,7 +45,7 @@
       gap: toRem(4);
     }
     &__img,
-    &__info {
+    &-wrapper {
       flex: 1;
     }
     &__title {

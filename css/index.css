@@ -227,6 +227,15 @@ body {
   gap: 10rem;
 }
 
+.project-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .project__img {
   -webkit-margin-after: 2rem;
           margin-block-end: 2rem;
@@ -276,7 +285,7 @@ body {
   .project__info {
     gap: 0.25rem;
   }
-  .project__img, .project__info {
+  .project__img, .project-wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
