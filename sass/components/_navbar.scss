@@ -1,0 +1,23 @@
+.navbar {
+  background-color: var(--white);
+  @include container-column(40);
+  align-items: center;
+  padding-block-start: toRem(32);
+  padding-block-end: toRem(32);
+  &__item {
+    list-style: none;
+    &--active a {
+      color: var(--primary);
+    }
+  }
+  &__link {
+    font: var(--body1-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary);
+    transition: color 0.25s ease-in-out;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
