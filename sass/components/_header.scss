@@ -1,0 +1,15 @@
+.header {
+  @include top-sticky;
+  background-color: var(--white);
+  &-content {
+    min-block-size: toRem(64);
+    @include container-space;
+  }
+  &__brand {
+    line-height: 0;
+  }
+  &__logo {
+    width: toRem(115);
+    height: toRem(18);
+  }
+}

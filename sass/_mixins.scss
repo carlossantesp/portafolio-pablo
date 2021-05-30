@@ -1,0 +1,9 @@
+@mixin container-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin top-sticky {
+  position: sticky;
+  top: 0;
+}
