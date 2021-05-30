@@ -1,0 +1,74 @@
+.projects {
+  padding-block-start: toRem(128);
+  padding-block-end: toRem(128);
+  background-color: var(--bg-alt);
+  @include tablet {
+    padding-block-start: toRem(80);
+    padding-block-end: toRem(80);
+  }
+  &-content {
+    @include container-column(160);
+  }
+}
+.project {
+  &__img {
+    margin-block-end: toRem(32);
+    text-align: center;
+    img {
+      max-inline-size: 100%;
+    }
+  }
+  &__info,
+  &__btn {
+    @include container-column(16);
+  }
+  &__title {
+    font: var(--headline3);
+    color: var(--blue);
+  }
+  &:nth-child(odd) .btn__primary {
+    order: 2;
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    gap: toRem(32);
+    &__img {
+      margin-block-end: 0;
+    }
+    &__info {
+      gap: toRem(4);
+    }
+    &__img,
+    &__info {
+      flex: 1;
+    }
+    &__title {
+      font: var(--headline2);
+    }
+    &__description {
+      padding-block-end: toRem(16);
+      margin-block-end: toRem(22);
+    }
+    &__btn {
+      flex-direction: initial;
+      .btn {
+        flex: 1;
+      }
+    }
+    &:nth-child(odd) .project__img {
+      order: 2;
+    }
+    &:nth-child(odd) .btn__primary {
+      order: initial;
+    }
+  }
+
+  @include desktop {
+    gap: toRem(100);
+    &__info {
+      max-inline-size: 414px;
+    }
+  }
+}
