@@ -1,0 +1,26 @@
+.contact {
+  padding-block-start: toRem(64);
+  padding-block-end: toRem(64);
+  @include tablet {
+    padding-block-start: toRem(80);
+    padding-block-end: toRem(80);
+  }
+  &__title {
+    font: var(--headline3);
+    margin-block-end: toRem(32);
+    span {
+      display: block;
+    }
+    @include tablet {
+      font: var(--headline2);
+    }
+  }
+  &__email {
+    font: var(--headline4);
+    color: var(--tertiary);
+    text-decoration: none;
+    @include tablet {
+      font: var(--headline3);
+    }
+  }
+}

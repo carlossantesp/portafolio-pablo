@@ -1,6 +1,4 @@
 .hero {
-  max-inline-size: toRem(676);
-  margin: auto;
   padding: toRem(32) 0;
   @include container-column(16);
   &__img {

@@ -1,0 +1,45 @@
+.jobs {
+  background-color: var(--blue);
+  color: var(--white);
+  &-content {
+    padding-block-start: toRem(80);
+    padding-block-end: toRem(80);
+  }
+  &__title {
+    font: var(--headline3);
+    margin-block-end: toRem(16);
+    @include tablet {
+      font: var(--headline2);
+    }
+    @include desktop {
+      font: var(--headline1);
+    }
+  }
+  &__description {
+    padding-block-end: toRem(16);
+    margin-block-end: toRem(16);
+    border-bottom: 1px solid var(--bg-alt);
+    @include tablet {
+      font: var(--headline4);
+      font-weight: normal;
+    }
+  }
+}
+
+.job {
+  padding-block-start: toRem(26);
+  @include container-column(16);
+  &__title {
+    font: var(--headline3);
+  }
+  &__position {
+    font: var(--body1-bold);
+    color: var(--bg-alt);
+  }
+  &__description {
+    font: var(--body2);
+    @include tablet {
+      font: var(--body1);
+    }
+  }
+}
