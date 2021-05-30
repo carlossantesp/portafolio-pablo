@@ -1,0 +1,14 @@
+.social {
+  @include container-column(24);
+  @include tablet {
+    flex-direction: initial;
+    gap: toRem(40);
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    font: 700 14px / 27px var(--fontPrimary);
+    color: var(--secondary);
+  }
+}

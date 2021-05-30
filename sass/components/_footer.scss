@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--blue);
+  color: var(--white);
+  text-transform: uppercase;
+  padding-block-start: toRem(48);
+  padding-block-end: toRem(48);
+  &-content {
+    @include container-column(40);
+    @include tablet {
+      flex-direction: initial;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__brand {
+    line-height: 0;
+  }
+  &__logo {
+    width: toRem(117);
+    height: toRem(18.3167);
+  }
+}
