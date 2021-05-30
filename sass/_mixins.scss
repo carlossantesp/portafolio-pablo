@@ -3,7 +3,22 @@
   justify-content: space-between;
   align-items: center;
 }
+@mixin container-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: toRem($gap);
+}
 @mixin top-sticky {
   position: sticky;
   top: 0;
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
 }

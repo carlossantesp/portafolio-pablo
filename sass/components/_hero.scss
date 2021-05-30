@@ -1,0 +1,48 @@
+.hero {
+  max-inline-size: toRem(676);
+  margin: auto;
+  padding: toRem(32) 0;
+  @include container-column(16);
+  &__img {
+    width: toRem(64);
+    height: toRem(64);
+    @include tablet {
+      width: toRem(80);
+      height: toRem(80);
+    }
+  }
+  &__info {
+    @include container-column(8);
+  }
+  &__title {
+    font: var(--headline3);
+    color: var(--blue);
+    @include tablet {
+      font: var(--headline1);
+    }
+  }
+  &__subtitle {
+    font: var(--headline5);
+    font-weight: 500;
+    @include tablet {
+      font: var(--headline4);
+      font-weight: 500;
+      line-height: 38.83px;
+    }
+  }
+  &__description {
+    font: var(--body2);
+    padding-block-end: toRem(16);
+    @include tablet {
+      font: var(--body1);
+    }
+  }
+  &__btn {
+    a {
+      width: 100%;
+      @include tablet {
+        width: auto;
+      }
+    }
+  }
+}

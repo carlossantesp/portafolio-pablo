@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: toRem(12) toRem(24);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font: var(--button);
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: toRem(4);
+  &__primary {
+    background-color: var(--color-button);
+    color: var(--white);
+    border: none;
+  }
+}

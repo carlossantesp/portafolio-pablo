@@ -7,7 +7,7 @@
   --primary: #2b79bd;
   --secondary: #90b4ce;
   --tertiary: #ef4565;
-  --button: #3da9fc;
+  --color-button: #3da9fc;
   --bg-alt: #d8eefe;
 
   // Fonts
@@ -17,10 +17,9 @@
   --headline3: bold 32px / 32px var(--fontPrimary);
   --headline4: bold 24px / 26.4px var(--fontPrimary);
   --headline5: bold 20px / 26.4px var(--fontPrimary);
-  --body1: bold 14px / 27px var(--fontPrimary);
-  --body1-alt: bold 18px / 27px var(--fontPrimary);
-  --body2: normal 14px / 27px var(--fontPrimary);
-  --body2-alt: bold 14px / 27px var(--fontPrimary);
+  --body1: normal 18px / 27px var(--fontPrimary);
+  --body1-bold: bold 18px / 27px var(--fontPrimary);
+  --body2: normal 14px / 24px var(--fontPrimary);
   --button: 600 18px / 27px var(--fontPrimary);
   --caption: normal 12px / 27px var(--fontPrimary);
 }
