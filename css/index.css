@@ -99,6 +99,7 @@ body {
 
 .header__brand {
   line-height: 0;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -228,6 +229,10 @@ body {
   }
   .navbar__item--active, .navbar__item:hover {
     border-bottom: 4px solid var(--primary);
+  }
+  .navbar__link {
+    font: var(--body2);
+    font-weight: bold;
   }
 }
 
@@ -635,6 +640,7 @@ body {
 
 .footer__brand {
   line-height: 0;
+  cursor: pointer;
 }
 
 .footer__logo {

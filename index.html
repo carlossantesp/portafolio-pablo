@@ -11,7 +11,7 @@
     <header class="header">
       <div class="wrapper">
         <div class="header-content">
-          <a class="header__brand" href="#">
+          <a class="header__brand" tabindex="0" onclick="onTopHandler()">
             <img
               class="header__logo"
               src="./img/logo.png"
@@ -25,7 +25,7 @@
                 <a href="#hola" class="navbar__link">Hola</a>
               </li>
               <li class="navbar__item">
-                <a href="#project" class="navbar__link">Proyectos</a>
+                <a href="#projects" class="navbar__link">Proyectos</a>
               </li>
               <li class="navbar__item">
                 <a href="#jobs" class="navbar__link">Experiencia</a>
@@ -39,7 +39,7 @@
       </div>
     </header>
     <div class="wrapper-condensed">
-      <section class="hero">
+      <section id="hola" class="hero">
         <img
           src="./img/pablo-lee.png"
           alt="Pablo Lee's photo"
@@ -64,7 +64,7 @@
         </div>
       </section>
     </div>
-    <div class="projects">
+    <div id="projects" class="projects">
       <div class="wrapper">
         <section class="projects-content">
           <article class="project">
@@ -174,7 +174,7 @@
     </div>
     <div class="jobs">
       <div class="wrapper-condensed">
-        <section class="jobs-content">
+        <section id="jobs" class="jobs-content">
           <h2 class="jobs__title">Experiencia</h2>
           <p class="jobs__description">
             Tengo más de 3 años de experiencia en Frontend.
@@ -208,7 +208,7 @@
             </p>
           </article>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
           <h2 class="contact__title">
             ¿Quieres trabajar conmigo? <span>¡Hazme ping!</span>
           </h2>
@@ -222,7 +222,7 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="footer-content">
-          <a class="footer__brand" href="#">
+          <a class="footer__brand" tabindex="0" onclick="onTopHandler()">
             <img
               class="footer__logo"
               src="./img/logo.png"
