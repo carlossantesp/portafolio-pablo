@@ -91,6 +91,12 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 992px) {
+  .header-content {
+    min-block-size: 5.9375rem;
+  }
+}
+
 .header__brand {
   line-height: 0;
 }
@@ -111,6 +117,12 @@ body {
   padding: 0;
   line-height: 0;
   cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 .header__menu.active {
@@ -146,6 +158,16 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+@media screen and (min-width: 992px) {
+  .header__nav {
+    position: initial;
+    inset: initial;
+    -webkit-transform: initial;
+            transform: initial;
+    width: auto;
+  }
 }
 
 .navbar {
@@ -186,6 +208,27 @@ body {
 
 .navbar__link:hover {
   color: var(--primary);
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    padding: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  .navbar__item {
+    -webkit-padding-after: 0.25rem;
+            padding-block-end: 0.25rem;
+    min-inline-size: 5.3125rem;
+    text-align: center;
+  }
+  .navbar__item--active, .navbar__item:hover {
+    border-bottom: 4px solid var(--primary);
+  }
 }
 
 .hero {

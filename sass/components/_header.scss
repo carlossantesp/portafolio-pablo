@@ -4,6 +4,9 @@
   &-content {
     min-block-size: toRem(64);
     @include container-space;
+    @include desktop {
+      min-block-size: toRem(95);
+    }
   }
   &__brand {
     line-height: 0;
@@ -23,6 +26,9 @@
     padding: 0;
     line-height: 0;
     cursor: pointer;
+    @include desktop {
+      display: none;
+    }
     &.active {
       background-image: url(/icons/cancel.svg);
     }
@@ -47,6 +53,12 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: -1;
       }
+    }
+    @include desktop {
+      position: initial;
+      inset: initial;
+      transform: initial;
+      width: auto;
     }
   }
 }

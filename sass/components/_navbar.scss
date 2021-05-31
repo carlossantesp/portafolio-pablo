@@ -20,4 +20,18 @@
       color: var(--primary);
     }
   }
+  @include desktop {
+    flex-direction: initial;
+    padding: 0;
+    transition: all 0.25s ease;
+    &__item {
+      padding-block-end: toRem(4);
+      min-inline-size: toRem(85);
+      text-align: center;
+      &--active,
+      &:hover {
+        border-bottom: 4px solid var(--primary);
+      }
+    }
+  }
 }
