@@ -112,7 +112,7 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   background-color: transparent;
-  background-image: url(/icons/menu.svg);
+  background-image: url(../icons/menu.svg);
   background-repeat: no-repeat;
   display: inline-block;
   padding: 0;
@@ -127,7 +127,7 @@ body {
 }
 
 .header__menu.active {
-  background-image: url(/icons/cancel.svg);
+  background-image: url(../icons/cancel.svg);
 }
 
 .header__nav {
