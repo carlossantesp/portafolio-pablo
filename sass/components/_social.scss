@@ -10,5 +10,9 @@
   &__link {
     font: 700 14px / 27px var(--fontPrimary);
     color: var(--secondary);
+    transition: color 0.25s ease;
+    &:hover {
+      color: var(--white);
+    }
   }
 }

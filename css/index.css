@@ -276,15 +276,29 @@ body {
   text-decoration: none;
   cursor: pointer;
   font: var(--button);
-  color: var(--blue);
-  border: 2px solid var(--blue);
   border-radius: 0.25rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .btn__primary {
   background-color: var(--color-button);
   color: var(--white);
   border: none;
+}
+
+.btn__primary:hover {
+  background-color: #0485e9;
+}
+
+.btn__secondary {
+  background-color: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+.btn__secondary:hover {
+  background-color: #ceeafe;
 }
 
 .projects {
@@ -613,5 +627,11 @@ body {
 .social__link {
   font: 700 14px/27px var(--fontPrimary);
   color: var(--secondary);
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.social__link:hover {
+  color: var(--white);
 }
 /*# sourceMappingURL=index.css.map */

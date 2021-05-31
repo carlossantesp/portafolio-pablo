@@ -5,12 +5,22 @@
   text-decoration: none;
   cursor: pointer;
   font: var(--button);
-  color: var(--blue);
-  border: 2px solid var(--blue);
   border-radius: toRem(4);
+  transition: all 0.25s ease;
   &__primary {
     background-color: var(--color-button);
     color: var(--white);
     border: none;
+    &:hover {
+      background-color: darken($colorButton, 15%);
+    }
+  }
+  &__secondary {
+    background-color: transparent;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    &:hover {
+      background-color: darken($btnHover, 2%);
+    }
   }
 }
